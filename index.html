@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -6,161 +7,234 @@
     <title>Nur Nabilah | Data Analyst Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .bg-gradient-blue { background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); }
-        .accent-blue { color: #1d4ed8; }
-        .bg-accent-blue { background-color: #1d4ed8; }
-        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05); }
-        .sticky-nav { backdrop-filter: blur(12px); background-color: rgba(255, 255, 255, 0.8); }
+        body { font-family: 'Inter', sans-serif; }
+        .blue-gradient { background: linear-gradient(135deg, #0056b3 0%, #003d82 100%); }
+        .text-blue-accent { color: #0056b3; }
+        .bg-blue-accent { background-color: #0056b3; }
+        .border-blue-accent { border-color: #0056b3; }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; box-shadow: 0 10px 25px -5px rgba(0, 86, 179, 0.1); }
     </style>
 </head>
-<body class="bg-white text-slate-800">
+<body class="bg-white text-gray-800">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 sticky-nav border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-10 h-10 bg-accent-blue rounded-lg flex items-center justify-center text-white font-bold text-xl">N</div>
-                <span class="font-bold text-xl tracking-tight text-slate-900 uppercase">Nabilah.</span>
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter text-blue-accent">NABILAH.</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+                <a href="#about" class="hover:text-blue-accent transition">About</a>
+                <a href="#experience" class="hover:text-blue-accent transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-accent transition">Projects</a>
+                <a href="#skills" class="hover:text-blue-accent transition">Skills</a>
+                <a href="#contact" class="hover:text-blue-accent transition">Contact</a>
             </div>
-            <div class="hidden md:flex space-x-10 font-semibold text-sm text-slate-600">
-                <a href="#home" class="hover:text-blue-700 transition">Home</a>
-                <a href="#experience" class="hover:text-blue-700 transition">Experience</a>
-                <a href="#projects" class="hover:text-blue-700 transition">Projects</a>
-                <a href="#skills" class="hover:text-blue-700 transition">Skills</a>
-                <a href="#contact" class="px-5 py-2.5 bg-slate-900 text-white rounded-full hover:bg-blue-700 transition">Let's Talk</a>
-            </div>
+            <a href="mailto:nabilahszlnamr@gmail.com" class="hidden md:block px-5 py-2 bg-blue-accent text-white rounded-full text-sm font-bold hover:bg-blue-700 transition">Hire Me</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-40 pb-24 px-6 bg-gradient-blue">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-7 space-y-8">
-                <div class="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-                    </span>
-                    <span>Seeking Data Analyst Roles</span>
-                </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight">
-                    Nur Nabilah <br><span class="accent-blue">Suzelan Amir</span>
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-3/5 order-2 md:order-1">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Nur Nabilah Binti <br><span class="text-blue-accent">Suzelan Amir</span>
                 </h1>
-                <p class="text-xl text-slate-600 leading-relaxed max-w-2xl">
-                    Data Analyst Graduate specializing in transforming complex datasets into actionable insights. 
-                    Proven experience in <span class="font-bold text-slate-800">Predictive Maintenance</span> and <span class="font-bold text-slate-800">Business Intelligence</span>.
+                <p class="mt-4 text-xl text-gray-600 font-medium">
+                    Data Analyst | AI & Business Intelligence Enthusiast
                 </p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#projects" class="px-8 py-4 bg-accent-blue text-white rounded-2xl font-bold shadow-lg shadow-blue-200 hover:-translate-y-1 transition duration-300">View My Projects</a>
-                    <a href="#" class="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition duration-300">Download CV</a>
+                <div class="mt-6 space-y-2 text-gray-500">
+                    <p><i class="fas fa-map-marker-alt text-blue-accent w-6"></i> Ampang, Selangor, Malaysia</p>
+                    <p><i class="fas fa-envelope text-blue-accent w-6"></i> nabilahszlnamr@gmail.com</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href="https://www.linkedin.com/in/nabilahsuzelan" class="text-2xl hover:text-blue-accent transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/nabilahszln" class="text-2xl hover:text-blue-accent transition"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="flex items-center space-x-6 text-slate-400 text-2xl pt-4">
-                    <a href="https://linkedin.com/in/nabilahsuzelan" class="hover:text-blue-700 transition"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/nabilahszln" class="hover:text-slate-900 transition"><i class="fab fa-github"></i></a>
-                    <a href="mailto:nabilahszlnamr@gmail.com" class="hover:text-red-500 transition"><i class="fas fa-envelope"></i></a>
+                <p class="mt-8 text-gray-600 leading-relaxed max-w-2xl">
+                    Result-driven and analytical Data Analytics graduate with a multidisciplinary background in data science. Proficient in transforming complex data into actionable insights using Python, SQL, Power BI, and Machine Learning to drive business growth.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-blue-accent text-white rounded-lg font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">View My Projects</a>
+                    <a href="#" class="px-8 py-3 border-2 border-blue-accent text-blue-accent rounded-lg font-bold hover:bg-blue-50 transition">Download Resume</a>
                 </div>
             </div>
-            <div class="md:col-span-5 relative">
-                <!-- PHOTO INTEGRATION -->
-                <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-[12px] border-white">
-                    <img src="profile
-.png" alt="Nur Nabilah" class="w-full h-auto grayscale-[15%] hover:grayscale-0 transition duration-700">
+            <div class="md:w-2/5 order-1 md:order-2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-full blur-2xl opacity-70"></div>
+                    <!-- INSERT YOUR PHOTO HERE -->
+                    <img src="https://via.placeholder.com/400x400?text=Nur+Nabilah" alt="Nur Nabilah" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-2xl border-4 border-white">
                 </div>
-                <!-- Decorative elements -->
-                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600 rounded-2xl -z-0 opacity-10"></div>
-                <div class="absolute -top-6 -left-6 w-32 h-32 border-4 border-blue-100 rounded-full -z-0"></div>
             </div>
         </div>
     </section>
 
-    <!-- Highlights Strip -->
-    <div class="bg-white py-12 border-y border-slate-50">
+    <!-- Achievement Highlights -->
+    <section class="py-12 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center md:border-r border-slate-100 px-4">
-                    <h3 class="text-3xl font-extrabold accent-blue">3</h3>
-                    <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">Dean's List Semesters</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center card-hover">
+                    <i class="fas fa-award text-blue-accent text-2xl mb-3"></i>
+                    <p class="text-xs font-bold uppercase text-gray-400">Dean's List</p>
+                    <p class="text-sm font-bold">3 Consecutive Sems</p>
+                    <p class="text-[10px] text-blue-500 font-bold mt-1">GPA 4.00 (Last Sem)</p>
                 </div>
-                <div class="text-center md:border-r border-slate-100 px-4">
-                    <h3 class="text-3xl font-extrabold accent-blue">1</h3>
-                    <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">Scopus Publication</p>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center card-hover">
+                    <i class="fas fa-graduation-cap text-blue-accent text-2xl mb-3"></i>
+                    <p class="text-xs font-bold uppercase text-gray-400">Scholarship</p>
+                    <p class="text-sm font-bold">TESP MARA Holder</p>
                 </div>
-                <div class="text-center md:border-r border-slate-100 px-4">
-                    <h3 class="text-3xl font-extrabold accent-blue">MARA</h3>
-                    <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">Scholarship Holder</p>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center card-hover">
+                    <i class="fas fa-book text-blue-accent text-2xl mb-3"></i>
+                    <p class="text-xs font-bold uppercase text-gray-400">Publication</p>
+                    <p class="text-sm font-bold">Scopus-Indexed</p>
                 </div>
-                <div class="text-center px-4">
-                    <h3 class="text-3xl font-extrabold accent-blue">K-Youth</h3>
-                    <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">GIFT Programme Graduate</p>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center card-hover">
+                    <i class="fas fa-laptop-code text-blue-accent text-2xl mb-3"></i>
+                    <p class="text-xs font-bold uppercase text-gray-400">Internship</p>
+                    <p class="text-sm font-bold">Prasarana Malaysia</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center card-hover">
+                    <i class="fas fa-globe-asia text-blue-accent text-2xl mb-3"></i>
+                    <p class="text-xs font-bold uppercase text-gray-400">Exchange</p>
+                    <p class="text-sm font-bold">Thailand Programme</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center card-hover">
+                    <i class="fas fa-chart-line text-blue-accent text-2xl mb-3"></i>
+                    <p class="text-xs font-bold uppercase text-gray-400">Graduate</p>
+                    <p class="text-sm font-bold">K-Youth GIFT 2026</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Experience & Education Section -->
-    <section id="experience" class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16">
-            
-            <!-- Work Experience -->
-            <div class="md:col-span-7">
-                <h2 class="text-3xl font-bold mb-12 flex items-center">
-                    <span class="w-10 h-1 h-1 bg-accent-blue mr-4"></span> Work Experience
+    <!-- About Me -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-6 flex items-center gap-4">
+                    <span class="w-12 h-1 bg-blue-accent"></span> About Me
                 </h2>
-                
-                <div class="relative pl-8 border-l-2 border-slate-200 space-y-12">
-                    <!-- Prasarana -->
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-0 w-5 h-5 bg-accent-blue rounded-full border-4 border-white"></div>
-                        <div class="bg-white p-8 rounded-3xl card-shadow">
-                            <span class="text-blue-600 font-bold text-sm">MAR 2025 – MAR 2026</span>
-                            <h3 class="text-xl font-extrabold text-slate-900 mt-2">Data Analyst Intern</h3>
-                            <p class="text-slate-600 font-semibold">Prasarana Malaysia Berhad</p>
-                            <ul class="mt-6 space-y-4 text-slate-600 text-sm leading-relaxed">
-                                <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i> Developed a **Troubleshooting Guide System (TGS)** using Streamlit and Flask for MRT Kajang Line.</li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i> Built predictive models using **GRU and Holt-Winters** for wheel lifecycle and MKBF forecasting.</li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i> Created a **Project Status & Payment Tracker** dashboard in Power BI.</li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i> Conducted risk analysis for 1,000+ bus fleet units using Excel Pivot Tables.</li>
-                            </ul>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    I am a passionate Data Analytics graduate with a deep interest in Business Intelligence and Machine Learning. I believe that data is the most valuable asset of the modern era, and I strive to bridge the gap between complex raw data and strategic business decisions.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-blue-accent"></i>
+                            <span class="font-medium text-sm">Strong Analytical Thinking</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-blue-accent"></i>
+                            <span class="font-medium text-sm">Problem-solving Abilities</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-blue-accent"></i>
+                            <span class="font-medium text-sm">Adaptability & Agility</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-blue-accent"></i>
+                            <span class="font-medium text-sm">Team Collaboration</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Education -->
-            <div class="md:col-span-5 space-y-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-12 flex items-center">
-                        <span class="w-10 h-1 h-1 bg-accent-blue mr-4"></span> Education
-                    </h2>
-                    <div class="space-y-8">
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                            <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest text-blue-600 mb-2">2022 – 2026</h4>
-                            <h3 class="font-extrabold text-lg">BAsc (Hons) Data Analytics</h3>
-                            <p class="text-slate-600 text-sm">UMPSA Al-Sultan Abdullah</p>
-                            <p class="text-xs mt-3 text-slate-400 font-medium">3x Dean's List Recipient | TESP MARA Scholar</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                            <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest text-blue-600 mb-2">2021 – 2022</h4>
-                            <h3 class="font-extrabold text-lg">Matriculation (Physical Science)</h3>
-                            <p class="text-slate-600 text-sm">Perak Matriculation College</p>
-                        </div>
+            <div class="md:w-1/2 bg-blue-50 p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6">Education</h3>
+                <div class="space-y-8">
+                    <div class="relative pl-6 border-l-2 border-blue-200">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-accent rounded-full"></div>
+                        <h4 class="font-bold">Universiti Malaysia Pahang Al-Sultan Abdullah</h4>
+                        <p class="text-sm text-blue-600 font-semibold italic">Bachelor of Applied Science (Honours) in Data Analytics</p>
+                        <p class="text-xs text-gray-500 mb-2">Oct 2022 – March 2026</p>
+                        <p class="text-xs font-bold text-gray-700 underline">CGPA: 3.36 | TESP MARA Scholar</p>
+                    </div>
+                    <div class="relative pl-6 border-l-2 border-blue-200">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-300 rounded-full"></div>
+                        <h4 class="font-bold">Perak Matriculation College</h4>
+                        <p class="text-sm text-gray-600 italic">Matriculation Certificate in Physical Science</p>
+                        <p class="text-xs text-gray-500">July 2021 – May 2022</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div>
-                    <h2 class="text-3xl font-bold mb-8">Certifications</h2>
-                    <div class="space-y-3">
-                        <div class="flex items-center p-3 bg-white rounded-xl border border-slate-100 text-sm">
-                            <i class="fas fa-award text-yellow-500 mr-3"></i> Basic Excel Plus+ Industrial App
+    <!-- Professional Experience -->
+    <section id="experience" class="py-24 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Work Experience</h2>
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
+                <div class="flex flex-col md:flex-row justify-between mb-8">
+                    <div>
+                        <h3 class="text-2xl font-bold">Data Analyst Intern</h3>
+                        <p class="text-lg text-blue-accent font-semibold">Prasarana Malaysia Berhad</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-gray-500 font-bold">March 2025 – March 2026</p>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">Industrial Training</span>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <i class="fas fa-cog text-blue-accent mt-1"></i>
+                            <span class="text-sm">Developed a <strong>Troubleshooting Guide System (TGS)</strong> using Streamlit and Flask for MRT Kajang Line.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-chart-pie text-blue-accent mt-1"></i>
+                            <span class="text-sm">Created a <strong>Project Status and Payment Tracker</strong> dashboard using Microsoft Power BI.</span>
+                        </li>
+                    </ul>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <i class="fas fa-microchip text-blue-accent mt-1"></i>
+                            <span class="text-sm">Built predictive maintenance models using <strong>GRU and Holt-Winters</strong> forecasting techniques.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-bus text-blue-accent mt-1"></i>
+                            <span class="text-sm">Conducted bus fleet risk analysis using Excel Pivot Tables.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- K-Youth Section (Career Readiness) -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="blue-gradient rounded-3xl p-8 md:p-16 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-12 opacity-10">
+                    <i class="fas fa-rocket text-[150px]"></i>
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-bold mb-2">K-Youth x GIFT Programme 2026</h2>
+                    <p class="text-blue-100 mb-10">Global Initiative for Future Talent by Khazanah Nasional Berhad</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h4 class="font-bold text-xl mb-4 border-b border-blue-400 pb-2">Business Scenarios Training</h4>
+                            <div class="space-y-4 text-sm">
+                                <p><strong>1. Business Analyst:</strong> Report summarisation for marketing teams.</p>
+                                <p><strong>2. HR Executive:</strong> Company primer preparation and culture strategy.</p>
+                                <p><strong>3. Relationship Manager:</strong> Mortgage loan recommendation & objection handling.</p>
+                                <p><strong>4. Data Analytics:</strong> Grab Performance Insights data analysis & executive presentation.</p>
+                            </div>
                         </div>
-                        <div class="flex items-center p-3 bg-white rounded-xl border border-slate-100 text-sm">
-                            <i class="fas fa-award text-yellow-500 mr-3"></i> Upskilling with Microsoft Power BI
-                        </div>
-                        <div class="flex items-center p-3 bg-white rounded-xl border border-slate-100 text-sm">
-                            <i class="fas fa-microchip text-blue-500 mr-3"></i> Malaysia Data Innovation Datathon
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                            <h4 class="font-bold text-xl mb-4">Capstone Project</h4>
+                            <p class="text-sm leading-relaxed mb-4 text-blue-50">
+                                Applied end-to-end data storytelling techniques: cleaning raw data, generating visualizations in Power BI, and presenting strategic recommendations to stakeholders.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs">Excel</span>
+                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs">Power BI</span>
+                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs">Stakeholder Management</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,159 +243,159 @@
     </section>
 
     <!-- Featured Projects -->
-    <section id="projects" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-extrabold text-slate-900">Featured Projects</h2>
-                <div class="w-20 h-1.5 bg-accent-blue mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Scopus Project -->
-                <div class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                    <div class="h-48 bg-slate-900 flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-bus text-white/10 text-9xl absolute"></i>
-                        <span class="relative z-10 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Scopus Indexed</span>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-extrabold text-slate-900 mb-3">Ridership Prediction System</h4>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Machine learning model using multi-feature analysis for Rapid Bus Kuantan & Penang.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-white text-slate-500 text-[10px] font-bold rounded-lg border">PYTHON</span>
-                            <span class="px-3 py-1 bg-white text-slate-500 text-[10px] font-bold rounded-lg border">ML</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Power BI -->
-                <div class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                    <div class="h-48 bg-blue-700 flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-chart-pie text-white/10 text-9xl absolute"></i>
-                        <span class="relative z-10 bg-white text-blue-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase">BI Dashboard</span>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-extrabold text-slate-900 mb-3">Customer Segmentation</h4>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Interactive Power BI dashboard identifying purchasing patterns and business opportunities.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-white text-slate-500 text-[10px] font-bold rounded-lg border">POWER BI</span>
-                            <span class="px-3 py-1 bg-white text-slate-500 text-[10px] font-bold rounded-lg border">DAX</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Vision -->
-                <div class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                    <div class="h-48 bg-slate-200 flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-car text-slate-400/20 text-9xl absolute"></i>
-                        <span class="relative z-10 bg-slate-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Computer Vision</span>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-extrabold text-slate-900 mb-3">Vehicle Registration Detection</h4>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">AI-driven system using OCR and OpenCV for automated license plate recognition.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-white text-slate-500 text-[10px] font-bold rounded-lg border">OPENCV</span>
-                            <span class="px-3 py-1 bg-white text-slate-500 text-[10px] font-bold rounded-lg border">PYTHON</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="projects" class="py-24 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Featured Projects</h2>
+            <p class="text-gray-500">Showcasing technical proficiency in Machine Learning, BI, and AI.</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
             
-            <div class="mt-12 text-center">
-                <a href="https://github.com/nabilahszln" class="inline-flex items-center font-bold text-blue-700 hover:underline">
-                    View more projects on GitHub <i class="fas fa-external-link-alt ml-2"></i>
-                </a>
+            <!-- Project 1 (Scopus) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col card-hover">
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Research Publication</span>
+                        <a href="https://doi.org/10.21837/pm.v23i39.1913" target="_blank" class="text-blue-accent hover:underline text-xs font-bold">Read Journal <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 leading-snug">Ridership Prediction System for Rapid Bus (Kuantan & Penang)</h3>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Published in a Scopus-indexed journal. Developed machine learning models using multi-feature analysis to forecast ridership demand and support urban transport planning.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Python</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Machine Learning</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Transportation Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 (Customer Seg) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col card-hover">
+                <div class="p-8">
+                    <span class="px-3 py-1 bg-purple-100 text-purple-700 text-[10px] font-bold uppercase rounded-full tracking-wider mb-4 inline-block">Business Intelligence</span>
+                    <h3 class="text-xl font-bold mb-3 leading-snug">Customer Segmentation & Product Category Dashboard</h3>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Developed an interactive Power BI dashboard to analyze customer purchasing patterns and product performance. Enabled data-driven decision-making through dynamic reporting.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Power BI</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">DAX</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Data Modelling</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 (AI/CV) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col card-hover">
+                <div class="p-8">
+                    <span class="px-3 py-1 bg-orange-100 text-orange-700 text-[10px] font-bold uppercase rounded-full tracking-wider mb-4 inline-block">Artificial Intelligence</span>
+                    <h3 class="text-xl font-bold mb-3 leading-snug">UMPSA Vehicle Registration Detection System</h3>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Applied OCR and Computer Vision techniques for license plate recognition to improve vehicle registration verification efficiency at university entrances.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Python</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">OpenCV</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">OCR</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 (Predictive) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col card-hover">
+                <div class="p-8">
+                    <span class="px-3 py-1 bg-green-100 text-green-700 text-[10px] font-bold uppercase rounded-full tracking-wider mb-4 inline-block">Time Series</span>
+                    <h3 class="text-xl font-bold mb-3 leading-snug">MRT Wheel Lifecycle Prediction</h3>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Forecasted wheel lifecycle and MKBF using GRU and Holt-Winters. Supported predictive maintenance planning to enhance MRT operational efficiency.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Python</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Machine Learning</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full font-medium">Predictive Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mt-12 text-center">
+            <a href="https://github.com/nabilahszln" target="_blank" class="text-blue-accent font-bold hover:underline">View More Projects on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center">Technical Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold border-b-2 border-blue-accent pb-2 inline-block">Core Analysis</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">Python</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">SQL</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">R Language</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold border-b-2 border-blue-accent pb-2 inline-block">Visualization</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">Power BI</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">Tableau</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">Excel (Pivot/VBA)</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold border-b-2 border-blue-accent pb-2 inline-block">Intelligence</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">Machine Learning</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">Computer Vision</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-accent text-sm font-bold rounded-lg border border-blue-100">OCR</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold border-b-2 border-blue-accent pb-2 inline-block">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-gray-50 text-gray-600 text-sm font-bold rounded-lg">Critical Thinking</span>
+                        <span class="px-4 py-2 bg-gray-50 text-gray-600 text-sm font-bold rounded-lg">Presentation</span>
+                        <span class="px-4 py-2 bg-gray-50 text-gray-600 text-sm font-bold rounded-lg">Management</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills" class="py-24 bg-slate-900 text-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <h2 class="text-3xl font-bold mb-16 text-center">Technical Toolbox</h2>
-            <div class="grid md:grid-cols-4 gap-12">
-                <div>
-                    <h5 class="text-blue-400 font-bold mb-6 text-sm tracking-widest uppercase">Programming</h5>
-                    <div class="space-y-4">
-                        <div class="flex justify-between text-sm"><span>Python</span><span class="text-blue-400">95%</span></div>
-                        <div class="w-full bg-slate-800 h-1.5 rounded-full"><div class="bg-blue-500 h-full w-[95%]"></div></div>
-                        <div class="flex justify-between text-sm"><span>SQL (MySQL/PostgreSQL)</span><span class="text-blue-400">90%</span></div>
-                        <div class="w-full bg-slate-800 h-1.5 rounded-full"><div class="bg-blue-500 h-full w-[90%]"></div></div>
-                        <div class="flex justify-between text-sm"><span>R</span><span class="text-blue-400">85%</span></div>
-                        <div class="w-full bg-slate-800 h-1.5 rounded-full"><div class="bg-blue-500 h-full w-[85%]"></div></div>
+    <!-- Volunteering & Leadership -->
+    <section class="py-24 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-2xl font-bold mb-8">Leadership & Activities</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold">Vice Treasurer, Gerayu Ritma Club</h4>
+                        <p class="text-sm text-gray-500">Managed club finances and performed Gamelan at university convocations.</p>
                     </div>
-                </div>
-                <div>
-                    <h5 class="text-blue-400 font-bold mb-6 text-sm tracking-widest uppercase">Visualization</h5>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Power BI</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Tableau</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Excel (Pivot)</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Power Query/DAX</span>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="text-blue-400 font-bold mb-6 text-sm tracking-widest uppercase">Advanced AI</h5>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">NLP</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Computer Vision</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Machine Learning</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Predictive Modeling</span>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="text-blue-400 font-bold mb-6 text-sm tracking-widest uppercase">Professional</h5>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Project Management</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Critical Thinking</span>
-                        <span class="bg-slate-800 px-4 py-2 rounded-xl border border-slate-700 text-sm">Malay & English</span>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold">Activity Committee Member</h4>
+                        <p class="text-sm text-gray-500 italic">Globalization Cultural Exchange, Thailand</p>
+                        <p class="text-sm text-gray-500">Coordinated cultural exchange activities for international participants.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Leadership & Extra Section -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-20">
-                <div>
-                    <h2 class="text-3xl font-extrabold mb-10">Leadership</h2>
-                    <div class="space-y-8">
-                        <div class="flex gap-6">
-                            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 flex-shrink-0">
-                                <i class="fas fa-coins text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg">Vice Treasurer, Gerayu Ritma Club</h4>
-                                <p class="text-slate-600 text-sm mt-2 leading-relaxed">Managed club finances and budgeting. Performed Gamelan in national and international forums including the 19th UMPSA Convocation.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 flex-shrink-0">
-                                <i class="fas fa-plane-departure text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg">Global Exchange, Thaksin University</h4>
-                                <p class="text-slate-600 text-sm mt-2 leading-relaxed">Coordinated Cultural Exchange Night in Thailand, facilitating engagement between Malaysian and Thai students.</p>
-                            </div>
-                        </div>
+            <div class="lg:w-1/2">
+                <h2 class="text-2xl font-bold mb-8">Volunteering</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <strong>FOKUS 2022</strong>
+                        <p class="text-gray-500">MC and Moderator for World OKU Day.</p>
                     </div>
-                </div>
-                <div>
-                    <h2 class="text-3xl font-extrabold mb-10">Volunteering</h2>
-                    <div class="grid grid-cols-1 gap-4">
-                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center">
-                            <i class="fas fa-hands-helping text-blue-500 mr-4"></i>
-                            <span class="font-medium text-slate-700">MC & Moderator, FOKUS 2022 (National Level)</span>
-                        </div>
-                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center">
-                            <i class="fas fa-seedling text-green-500 mr-4"></i>
-                            <span class="font-medium text-slate-700">Community Service at Khao Khram Waterfall, Thailand</span>
-                        </div>
-                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center">
-                            <i class="fas fa-graduation-cap text-purple-500 mr-4"></i>
-                            <span class="font-medium text-slate-700">Mathematics Mentor, Professor Turun Padang</span>
-                        </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <strong>Professor Turun Padang</strong>
+                        <p class="text-gray-500">Maths Tutor for 8-year-old students.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <strong>Karnival Apresiasi Wanita</strong>
+                        <p class="text-gray-500">Master of Ceremony (MC).</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <strong>Khao Khram Waterfall</strong>
+                        <p class="text-gray-500">Community service in Thailand.</p>
                     </div>
                 </div>
             </div>
@@ -329,29 +403,50 @@
     </section>
 
     <!-- Contact Section -->
-    <footer id="contact" class="bg-slate-50 py-24 border-t border-slate-200">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-extrabold mb-6">Let's Work Together</h2>
-            <p class="text-slate-500 mb-12 text-lg">I am ready to bring my data expertise to your team. Reach out via email or LinkedIn.</p>
-            
-            <div class="flex flex-wrap justify-center gap-6 mb-16">
-                <a href="mailto:nabilahszlnamr@gmail.com" class="flex items-center px-8 py-4 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <i class="fas fa-envelope mr-3 text-blue-600"></i> nabilahszlnamr@gmail.com
-                </a>
-                <a href="tel:+60142327343" class="flex items-center px-8 py-4 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <i class="fas fa-phone mr-3 text-blue-600"></i> +6014-2327343
-                </a>
-            </div>
-
-            <div class="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
-                <p>© 2026 Nur Nabilah Binti Suzelan Amir. All rights reserved.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="https://linkedin.com/in/nabilahsuzelan" class="hover:text-blue-600">LinkedIn</a>
-                    <a href="https://github.com/nabilahszln" class="hover:text-blue-600">GitHub</a>
+    <section id="contact" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Let's Create <span class="text-blue-accent">Impact</span> Together</h2>
+                    <p class="text-gray-600 mb-8 max-w-lg">
+                        I am passionate about leveraging data analytics, AI, and BI to solve real-world problems. Feel free to reach out for collaborations or opportunities!
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-100 text-blue-accent flex items-center justify-center rounded-full">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="font-semibold">nabilahszlnamr@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-100 text-blue-accent flex items-center justify-center rounded-full">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <span class="font-semibold">linkedin.com/in/nabilahsuzelan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-3xl">
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Full Name" class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-accent">
+                            <input type="email" placeholder="Email Address" class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-accent">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-accent">
+                        <textarea rows="4" placeholder="Your Message" class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-accent"></textarea>
+                        <button class="w-full py-4 bg-blue-accent text-white font-bold rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-100">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-gray-100 text-center">
+        <p class="text-sm text-gray-500">&copy; 2026 Nur Nabilah Binti Suzelan Amir. All rights reserved.</p>
+        <p class="text-[10px] text-gray-400 mt-2 uppercase tracking-widest">Built with Passion for Data & Insight</p>
     </footer>
 
 </body>
 </html>
+```
